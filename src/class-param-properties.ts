@@ -6,3 +6,5 @@ class Person {
 }
 
 const person = new Person("John", "Doe");
+
+export {};
