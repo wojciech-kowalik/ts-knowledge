@@ -1,3 +1,5 @@
+// use case for implementation in code
+
 import { Square, Rectangle, Shape } from "./discriminated-union";
 
 const isSquare = (shape: Shape): shape is Square => {

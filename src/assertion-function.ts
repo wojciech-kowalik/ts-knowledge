@@ -1,3 +1,5 @@
+// use case for testing purpose
+
 type Person = {
   name: string;
   dateOfBirth?: Date;
