@@ -1,5 +1,6 @@
 const input = [1, 2, 3, 4, 5];
 
+// readonly param makes array immutable
 function reverse(input: readonly number[]) {
   //return input.sort().reverse(); // mutable version with error
   return input.slice().sort().reverse();
