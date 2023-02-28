@@ -57,7 +57,7 @@ const processing = (request: PaymentRequest & PersonalRequest) => {
   return `${request.creditCardToken} ${request.firstName}`;
 };
 
-const logWithValue = <T extends SubmitRequest, K extends keyof T>(
+const logWithValue = <T extends PersonalRequest, K extends keyof T>(
   obj: T,
   key: K,
   value: T[K] // lookup type
@@ -65,3 +65,13 @@ const logWithValue = <T extends SubmitRequest, K extends keyof T>(
   console.log("Settings", key, value);
   obj[key] = value;
 };
+
+logWithValue(
+  {
+    firstName: "john",
+    middleName: "aka",
+    lastName: "doe",
+  },
+  "firstName",
+  "antony"
+);
