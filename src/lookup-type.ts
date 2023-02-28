@@ -56,3 +56,12 @@ type PersonalRequest = SubmitRequest["personal"]["previousAliases"];
 const processing = (request: PaymentRequest & PersonalRequest) => {
   return `${request.creditCardToken} ${request.firstName}`;
 };
+
+const logWithValue = <T extends SubmitRequest, K extends keyof T>(
+  obj: T,
+  key: K,
+  value: T[K] // lookup type
+) => {
+  console.log("Settings", key, value);
+  obj[key] = value;
+};
