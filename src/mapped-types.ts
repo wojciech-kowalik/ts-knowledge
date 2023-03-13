@@ -6,7 +6,7 @@ type Point = {
 
 // implementation of builtin mapped type
 type Readonly<T> = {
-  readonly [Item in keyof T]: T[Item];
+  +readonly [Item in keyof T]: T[Item];
 };
 
 // implementation of builtin mapped type and modifier "?"
