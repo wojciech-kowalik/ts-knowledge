@@ -10,10 +10,4 @@ const palette = {
 
 const greenNormalized = palette.green.toUpperCase();
 
-const paletteTyped = {
-  red: [255, 0, 0],
-  green: "#00ff00",
-  blue: [0, 0, 255],
-};
-
 export {};
